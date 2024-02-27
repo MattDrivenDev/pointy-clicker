@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using PointyClicker.Scenes;
 
 namespace PointyClicker
 {
@@ -27,7 +28,7 @@ namespace PointyClicker
 
             base.Initialize();
 
-            CurrentScene = new Scene(this, "room");
+            CurrentScene = new Room(this);
         }
 
         protected override void LoadContent()
