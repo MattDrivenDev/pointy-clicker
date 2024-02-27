@@ -36,14 +36,17 @@ namespace PointyClicker.Scenes
         {
             spriteBatch.Draw(Background, Vector2.Zero, Color.White);
 
-            // Draw lines around the bounds
-            for (int i = 0; i < Bounds.Count; i++)
+            if (Game.Debug)
             {
-                var start = Bounds[i];
-                var end = Bounds[(i + 1) % Bounds.Count];
+                // Draw lines around the bounds
+                for (int i = 0; i < Bounds.Count; i++)
+                {
+                    var start = Bounds[i];
+                    var end = Bounds[(i + 1) % Bounds.Count];
 
-                spriteBatch.DrawLine(start, end, Color.Red, 2);
-            }
+                    spriteBatch.DrawLine(start, end, Color.Red, 2);
+                }
+            }            
         }
     }
 }

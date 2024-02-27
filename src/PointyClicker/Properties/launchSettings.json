@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PointyClicker": {
+      "commandName": "Project",
+      "commandLineArgs": "--debug"
+    }
+  }
+}
